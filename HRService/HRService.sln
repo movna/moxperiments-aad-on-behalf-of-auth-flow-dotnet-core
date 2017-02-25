@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRWebApp", "HRWebApp\HRWebApp.csproj", "{A79F3246-2B45-413B-839C-660DE1DCBEDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{EEFB9E9E-8B67-44F6-B69B-18F604A6C59C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VacationAPI", "VacationAPI\VacationAPI.csproj", "{A3DE3CA4-EF5D-4858-9E5E-4F9DDF3F06AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A79F3246-2B45-413B-839C-660DE1DCBEDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A79F3246-2B45-413B-839C-660DE1DCBEDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A79F3246-2B45-413B-839C-660DE1DCBEDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A79F3246-2B45-413B-839C-660DE1DCBEDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEFB9E9E-8B67-44F6-B69B-18F604A6C59C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEFB9E9E-8B67-44F6-B69B-18F604A6C59C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEFB9E9E-8B67-44F6-B69B-18F604A6C59C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEFB9E9E-8B67-44F6-B69B-18F604A6C59C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3DE3CA4-EF5D-4858-9E5E-4F9DDF3F06AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3DE3CA4-EF5D-4858-9E5E-4F9DDF3F06AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3DE3CA4-EF5D-4858-9E5E-4F9DDF3F06AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3DE3CA4-EF5D-4858-9E5E-4F9DDF3F06AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
