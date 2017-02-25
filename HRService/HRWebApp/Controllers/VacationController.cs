@@ -22,21 +22,14 @@ namespace HRWebApp.Controllers
             var authInfo = await HttpContext.Authentication.GetAuthenticateInfoAsync("AAD");
 
             // Provided same key as in OnTokenValidated
-            var userJwt = authInfo.Properties.GetTokenValue("id_token");
-
-            var credentials = new ClientCredential("<HR-APP-AAD-CLIENT-ID>", "<HR-APP-AAD-CLIENT-SECRET>");
-            var authContext = new AuthenticationContext("https://login.microsoftonline.com/<TENANT-DOMAIN-OR-GUID>");
-
-            // On-behalf-of auth token request call
-            var authResult = await authContext.AcquireTokenAsync("<RESOURCE-URI-OF-VACATION-API>", credentials,
-                new UserAssertion(userJwt));
-
+            var vacationApiToken = authInfo.Properties.Items["vacation.api.token"];
+            
             using (var client = new HttpClient())
             {
                 var request = new HttpRequestMessage(HttpMethod.Get, "<UPCOMING-VACATIONS-API-ENDPOINT>");
 
                 // Add the token to the request
-                request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", authResult.AccessToken);
+                request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", vacationApiToken);
                 var response = await client.SendAsync(request);
                 if (response.IsSuccessStatusCode)
                 {
